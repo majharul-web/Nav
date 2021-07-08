@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(img/red-luxury.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+.menubar {
+  background-color: #89741e;
+  text-align: center;
+}
+.menubar ul {
+  display: inline-flex;
+  list-style: none;
+  position: relative;
+}
+.menubar ul li {
+  width: 140px;
+  padding: 15px;
+  margin: 15px;
+}
+.menubar ul li a {
+  text-decoration: none;
+  color: white;
+}
+.active,
+.menubar ul li:hover {
+  background-color: #497f4c;
+  border-radius: 7px;
+}
+.menubar .fas {
+  margin-right: 5px;
+}
+.sub-menu-1 {
+  display: none;
+}
+.menubar ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background: #89741e;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+.menubar ul li:hover .sub-menu-1 ul {
+  display: block;
+  margin: 10px;
+}
+.menubar ul li:hover .sub-menu-1 ul li {
+  width: 140px;
+  padding: 10px;
+  background: transparent;
+  border-bottom: 1px dotted white;
+  border-radius: 0;
+  text-align: left;
+}
+.menubar ul li:hover .sub-menu-1 ul li:last-child {
+  border: none;
+}
+.menubar ul li:hover .sub-menu-1 ul li a:hover {
+  color: #82c91e;
+}
+.sub-menu-2 {
+  display: none;
+}
+.hover-me:hover .sub-menu-2 {
+  display: block;
+  position: absolute;
+  margin-top: -15px;
+  margin-left: 130px;
+  background: #89741e;
+}
